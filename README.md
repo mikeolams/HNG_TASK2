@@ -1,5 +1,5 @@
 # HNG_TASK2
-HTML power to reveal a word document CV with no CSS 
+HTML power enhanced with css to reveal a word document CV with CSS added tostyle the page
 #This also includes links to related lucid and twitter tasks respectively.
 
 https://lucid.blog/mikeolams/post/1566685532
