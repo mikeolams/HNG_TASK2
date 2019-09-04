@@ -17,6 +17,28 @@ body {
     margin-right: 10%;
 
   }
+  .header-layout,label{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center
+  }
+  label{
+    margin: 1.5rem;
+  }
+  input{
+    margin-left: 10%;
+  }
+  .contact-msg, #contact-msg{
+    margin-left:30%;
+    padding: 2px
+  }
+  #contact-msg{
+    border: darkseagreen 2px solid;
+    background-color: gold;
+  }
+  .no-show{
+    display:none;
+  }
   aside {
     grid-area: sidebar;
     margin-left: 15%;
