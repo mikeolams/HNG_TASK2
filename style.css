@@ -28,6 +28,9 @@ body {
   input{
     margin-left: 10%;
   }
+  input[type="Submit"]{
+    margin-left:50%;
+  }
   .contact-msg, #contact-msg{
     margin-left:30%;
     padding: 2px
