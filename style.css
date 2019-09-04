@@ -22,6 +22,11 @@ body {
     /* justify-content: center; */
     align-items: center
   }
+  button{
+    background-color: blue;
+    color: white;
+    padding: 2%;
+  }
   label{
     margin: 1.5rem;
   }
