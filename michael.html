@@ -74,23 +74,23 @@
         </article>
     </aside>
     <main>
-        <header>
+        <header class="header-layout">
             <img src="https://res.cloudinary.com/gmikecloud/image/upload/c_thumb,w_200,g_face/v1566640573/20190321_205838_wbg2cb.jpg" alt="Mike's Picture">
             <!-- <input type="button" value="Contact ME"/> -->
-            <p>You can reach Michael directly by clicking <button>Contact Michael</button> or <a href="#footer_class">via Social Media</a></p>
-            <form action="" style="display:none1" id="contact-msg">
+            <p class="contact-msg">You may reach Michael directly by clicking <button>Contact Michael</button> OR <a href="#footer_class">via Social Media</a></p>
+            <form action="" class="no-show" id="contact-msg">
                 <label>Name (at least 4 characters):
-                    <input type="text" name="name" required minlength="4">
+                    <input type="text" placeholder="Your FullName" name="name" required minlength="4">
                 </label>
                 <label>Email:
-                    <input type="email" name="email" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
                 </label>
                 <label>Subject/Title:
-                    <input type="text" name="title" required minlength="4" maxlength="20">
+                    <input type="text" placeholder="Title of your message" name="title" required minlength="4" maxlength="20">
                 </label>
                 <!-- Last Name:<input type="text"> -->
                 <label>Message:
-                    <input type="text" name="message" required minlength="20">
+                    <input type="text" placeholder="Write your message" name="message" required minlength="20">
                 </label>
                 <input type="Submit" value="Submit">
             </form>
@@ -157,5 +157,14 @@
             <li><i><a href="tg://msg?text=your MsG!" id="telegram_share" class="mobileShare" title="inviteFriends" alt="telegram_share">Telegraph</a></i></li>
         </ul>
     </footer>
+    <script>
+        document.querySelector("button").addEventListener('click',()=>{
+            console.log('you click'); 
+            // const direction = document.querySelector(".contact-msg");
+            // const form = document.querySelector("#contact-msg");
+            document.querySelector(".contact-msg").classList.add("no-show");
+            document.querySelector("#contact-msg").classList.remove("no-show");
+        })
+    </script>
   </body>
 </html>
